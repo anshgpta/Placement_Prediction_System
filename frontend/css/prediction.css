@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6ff;
+    color: #172033;
+}
+
+.header {
+    height: 70px;
+    padding: 0 7%;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.header h2 {
+    font-size: 21px;
+}
+
+.header a {
+    text-decoration: none;
+    color: #4f46e5;
+    font-weight: bold;
+}
+
+.prediction-container {
+    width: 90%;
+    max-width: 900px;
+    margin: 50px auto;
+}
+
+.prediction-header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.tagline {
+    color: #4f46e5;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.prediction-header h1 {
+    font-size: 38px;
+    margin-bottom: 12px;
+}
+
+.prediction-header p:last-child {
+    color: #70798a;
+}
+
+.result-card {
+    background: white;
+    padding: 40px;
+    border-radius: 14px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    margin-bottom: 25px;
+}
+
+.result-card h2 {
+    margin-bottom: 20px;
+}
+
+.score {
+    width: 160px;
+    height: 160px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    background: #eef2ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.score span {
+    font-size: 38px;
+    font-weight: bold;
+    color: #4f46e5;
+}
+
+#predictionMessage {
+    color: #606a7c;
+    font-size: 16px;
+}
+
+.data-card {
+    background: white;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+    margin-bottom: 30px;
+}
+
+.data-card h2 {
+    margin-bottom: 25px;
+}
+
+.data-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.data-grid div {
+    background: #f7f8ff;
+    padding: 18px;
+    border-radius: 8px;
+}
+
+.data-grid span {
+    display: block;
+    color: #70798a;
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+.data-grid strong {
+    font-size: 18px;
+}
+
+.recommendation-btn {
+    display: block;
+    width: fit-content;
+    margin: auto;
+    padding: 13px 25px;
+    background: #4f46e5;
+    color: white;
+    text-decoration: none;
+    border-radius: 7px;
+    font-weight: bold;
+}
+
+.recommendation-btn:hover {
+    background: #4338ca;
+}
+
+@media (max-width: 700px) {
+
+    .prediction-container {
+        width: 90%;
+    }
+
+    .data-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+
+    .prediction-header h1 {
+        font-size: 30px;
+    }
+
+    .data-grid {
+        grid-template-columns: 1fr;
+    }
+}

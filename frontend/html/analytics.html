@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Analytics | Placement Predict</title>
+
+    <link rel="stylesheet" href="../css/analytics.css">
+</head>
+
+<body>
+
+    <header class="header">
+
+        <h2>Placement Prediction System</h2>
+
+        <a href="dashboard.html">Dashboard</a>
+
+    </header>
+
+
+    <main class="analytics-container">
+
+        <div class="page-title">
+
+            <p>STUDENT ANALYTICS</p>
+
+            <h1>Performance Analysis</h1>
+
+            <span id="studentName">
+                Student
+            </span>
+
+        </div>
+
+
+        <!-- Performance Cards -->
+
+        <section class="stats">
+
+            <div class="stat-card">
+
+                <h3>CGPA</h3>
+
+                <strong id="cgpa">
+                    -
+                </strong>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <h3>Attendance</h3>
+
+                <strong id="attendance">
+                    -
+                </strong>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <h3>DSA Score</h3>
+
+                <strong id="dsa">
+                    -
+                </strong>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <h3>Projects</h3>
+
+                <strong id="projects">
+                    -
+                </strong>
+
+            </div>
+
+        </section>
+
+
+        <!-- Performance Chart -->
+
+        <section class="chart-card">
+
+            <h2>Performance Overview</h2>
+
+            <div class="chart">
+
+                <div class="bar-item">
+
+                    <span>CGPA</span>
+
+                    <div class="bar">
+                        <div id="cgpaBar"></div>
+                    </div>
+
+                </div>
+
+
+                <div class="bar-item">
+
+                    <span>Attendance</span>
+
+                    <div class="bar">
+                        <div id="attendanceBar"></div>
+                    </div>
+
+                </div>
+
+
+                <div class="bar-item">
+
+                    <span>DSA</span>
+
+                    <div class="bar">
+                        <div id="dsaBar"></div>
+                    </div>
+
+                </div>
+
+
+                <div class="bar-item">
+
+                    <span>Technical Skills</span>
+
+                    <div class="bar">
+                        <div id="skillsBar"></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Skills -->
+
+        <section class="skills-card">
+
+            <h2>Technical Skills</h2>
+
+            <div id="skills">
+                -
+            </div>
+
+        </section>
+
+
+        <a href="prediction.html" class="prediction-btn">
+            View Placement Prediction
+        </a>
+
+    </main>
+
+
+    <script src="../js/analytics.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+{
+  "cgpa": 8.0,
+  "attendance": 85,
+  "dsa": 75,
+  "projects": 3,
+  "internships": 1,
+  "skills": [
+    "Python",
+    "C++",
+    "SQL"
+  ],
+  "branch": "CSE-DS"
+}
